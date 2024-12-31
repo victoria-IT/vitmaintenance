@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # maintenance
 Down for Maintenance
 =======
