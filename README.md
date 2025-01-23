@@ -1,52 +1,22 @@
-# maintenance
-Down for Maintenance
-=======
-# Maintenance Landing Page
+# Victoria IT maintenance
 
-Maintenance page
+At Victoria IT, we're all about making your tech life easier! Our friendly team of experts comes to you, whether you're at home or work, to tackle all your tech troubles.
 
+From simple fixes to complex network issues, we provide personalized solutions that fit your needs perfectly.
 
+[![Static Badge](https://img.shields.io/badge/SiteBy-Victoria%20IT-blue)](https://www.victoriait.com.au)
 
-## Theme Features
+## What We Offer
 
-Leveraging the power of Astro and Tailwind CSS:
+We Specialize in IT Solutions and Tech Services:
 
-- Clean and modern design.
-- SEO-friendly.
-- Multiple Layouts.
-- Seamless Navigation.
-- Pre-built Sections.
-- Customizable Components.
-- Mobile-Responsiveness.
-
-## 🚀 Project Structure
-
-The project is built using Astro.js and Tailwind CSS. Here's a quick look at the project structure:
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+- Managed IT Services (MSP): Continuous system monitoring and management to keep your business ahead.
+- Cybersecurity & Threat Protection: Safeguard your data and systems from evolving threats.
+- Networking & Connectivity: Fast, reliable network and Wi-Fi solutions tailored to your workplace.
+- Email & Cloud Support: Seamless setup, migration, and troubleshooting for cloud and email systems.
+- Hardware & Software Assistance: From installation to troubleshooting, we’ll keep your tech in top shape.
+- Data Backup & Recovery: Ensure your critical business data is protected and recoverable
 
 ## 👀 Want to learn more?
 
-Feel free to check [Astro documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
->>>>>>> d5e0722 (Initial commit)
+Ready to take your business to new heights with reliable IT support? Contact Victoria IT today for a free consultation. Feel free to check [Call](tel:1800 687 806) or visit [Victoria IT Web](https://www.victoriait.com.au).
