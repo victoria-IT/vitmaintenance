@@ -17,6 +17,6 @@ We Specialize in IT Solutions and Tech Services:
 - Hardware & Software Assistance: From installation to troubleshooting, we’ll keep your tech in top shape.
 - Data Backup & Recovery: Ensure your critical business data is protected and recoverable
 
-## 👀 Want to learn more?
+## 👀 Contact us
 
-Ready to take your business to new heights with reliable IT support? Contact Victoria IT today for a free consultation. Feel free to check [Call](tel:1800 687 806) or visit [Victoria IT Web](https://www.victoriait.com.au).
+Ready to take your business to new heights with reliable IT support? Contact Victoria IT today for a free consultation. Feel free to check [Call Now](tel:1800687806) or visit [Victoria IT Web](https://www.victoriait.com.au).
