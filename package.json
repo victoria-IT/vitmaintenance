@@ -14,7 +14,7 @@
     "@astrojs/cloudflare": "^12.5.1",
     "@astrojs/tailwind": "^6.0.2",
     "@astrojs/vercel": "^8.1.4",
-    "astro": "^5.7.5",
+    "astro": "^5.16.1",
     "astro-navbar": "^2.3.3",
     "swiper": "^11.1.14",
     "tailwindcss": "^3.4.11",
