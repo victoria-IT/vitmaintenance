@@ -2,7 +2,6 @@
 import "../styles/global.css";
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
-import { ViewTransitions } from 'astro:transitions';
 ---
 
 <!doctype html>
@@ -12,18 +11,56 @@ import { ViewTransitions } from 'astro:transitions';
     <meta name="description" content="Victoria IT is currently down for maintenance to serve you better. Please check back soon for improved services and enhanced features. Thank you for your patience." />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Victoria IT - Down for Maintenance</title>
-    <meta
-      name="description"
-      content="Victoria IT is currently down for maintenance to serve you better. Please check back soon for improved services and enhanced features. Thank you for your patience."
-    />
-	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-  <ViewTransitions />
-  </head>
-  <body class="bg-white font-SpaceGrotesk">
+    <!-- Amplitude Analytics Tracking -->
+    <!-- <script src="https://cdn.amplitude.com/script/8b7081514100ce1fa1e32e1eba52ce3b.js"></script> -->
+  <body class="bg-white font-SpaceGrotesk min-h-screen flex flex-col">
     <Navbar />
-    <slot />
+    <div class="flex-1 flex flex-col">
+      <slot />
+    </div>
     <Footer/>
+    <script>
+      // Cookie consent
+      document.addEventListener('DOMContentLoaded', function() {
+        // Check if cookies are already set
+        if (!document.cookie.includes('cookie_prefs=')) {
+          // Create banner
+          var banner = document.createElement('div');
+          banner.style.cssText = 'position:fixed;bottom:0;left:0;width:100%;background:#191A23;color:#fff;z-index:9999;padding:16px;text-align:center;';
+          banner.innerHTML = '<span style="margin-right:16px;">We use cookies to enhance your experience. <a href="/privacy-policy" style="color:#B9FF66;text-decoration:underline;">Privacy Policy</a></span>' +
+            '<button id="accept-cookies" style="background:#B9FF66;color:#191A23;padding:8px 18px;border:none;border-radius:8px;font-weight:bold;cursor:pointer;margin-right:8px;">Accept</button>' +
+            '<button id="decline-cookies" style="background:#fff;color:#191A23;padding:8px 18px;border:1px solid #B9FF66;border-radius:8px;font-weight:bold;cursor:pointer;">Decline</button>';
+          
+          document.body.appendChild(banner);
+          
+          // Accept button
+          var acceptBtn = document.getElementById('accept-cookies') as HTMLButtonElement | null;
+          if (acceptBtn) {
+            acceptBtn.onclick = function() {
+              document.cookie = 'cookie_prefs=necessary:true,performance:true,functional:true,advertising:true;path=/;max-age=31536000';
+              banner.remove();
+            };
+          }
+          
+          // Decline button
+          var declineBtn = document.getElementById('decline-cookies') as HTMLButtonElement | null;
+          if (declineBtn) {
+            declineBtn.onclick = function() {
+              document.cookie = 'cookie_prefs=necessary:true,performance:false,functional:false,advertising:false;path=/;max-age=31536000';
+              banner.remove();
+            };
+          }
+        }
+      });
+      
+      // Track button clicks (placeholder for future analytics)
+      document.addEventListener('click', function(e) {
+        var target = e.target as HTMLElement;
+        if (target && target.tagName === 'A' && target instanceof HTMLAnchorElement && target.href && target.href.includes('tel:')) {
+          // Future analytics tracking
+          console.log('Call button clicked');
+        }
+      });
+    </script>
   </body>
 </html>

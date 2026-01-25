@@ -10,17 +10,17 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/cloudflare": "^12.5.1",
+    "@astrojs/check": "^0.9.2",
+    "@astrojs/cloudflare": "^12.6.5",
     "@astrojs/tailwind": "^6.0.2",
-    "@astrojs/vercel": "^8.1.4",
-    "astro": "^5.7.5",
-    "astro-navbar": "^2.3.3",
-    "swiper": "^11.1.14",
-    "tailwindcss": "^3.4.11",
-    "typescript": "^5.6.2"
+    "@astrojs/vercel": "^8.0.4",
+    "astro": "^5.16.15",
+    "astro-navbar": "^2.4.0",
+    "swiper": "^12.0.3",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "wrangler": "^4.13.2"
+    "wrangler": "^4.60.0"
   }
 }

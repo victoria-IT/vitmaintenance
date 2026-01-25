@@ -2,20 +2,20 @@
 import Container from "./Container.astro"
 ---
 <Container>
-<div class="relative flex flex-col-reverse items-center md:flex-row" id="hero">
-    <div class="row items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
-        <div class="text-left space-y-3">
-            <h1 class="text-5xl font-medium leading-none md:text-6xl text-center md:text-left">Website down <br>for  maintenance</h1>
-            <p class="mt-6 mb-8 text-xl font-normal leading-7 sm:mb-12 text-center md:text-left">Website is currently down for maintenance to server you better.
-                Please check back soon for improved services and enhanced features. Thank you for your patience. If you have any questions please contact us </p>
-            <div class="w-full justify-center md:justify-start items-center inline-flex">
-                <a href="tel:1800 687 806" target="_top" class="px-8 py-5 bg-zinc-900 hover:bg-white rounded-2xl text-center text-white hover:text-black border text-xl font-normal leading-7">Call us on 1800 687 806
+<div class="relative flex flex-col-reverse items-center md:flex-row justify-center w-full gap-2 md:gap-0" id="hero">
+    <div class="row items-center py-0 md:w-6/12 md:py-2">
+        <div class="text-left space-y-0">
+            <h1 class="text-4xl font-medium leading-tight md:text-6xl text-center md:text-left mt-2 mb-2 md:mt-4 md:mb-3">Website down <br>for maintenance</h1>
+            <p class="mt-1 pb-10 text-lg font-normal leading-6 text-center md:text-left">Website is currently down for maintenance to serve you better.
+                Please check back soon for improved services and enhanced features. Thank you for your patience. If you have any questions please contact us.</p>
+            <div class="w-full justify-center md:justify-start items-center inline-flex mt-4 mb-1">
+                <a href="tel:1800 687 806" target="_top" class="px-6 py-3 bg-zinc-900 hover:bg-white rounded-2xl text-center text-white hover:text-black border text-base font-normal leading-6">Call us on 1800 687 806
                 </a>
             </div>
         </div>
     </div>
-    <div class="flex items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
-        <img src="/Hero.svg" width="80%" alt="Website down for maintenance"/>
+    <div class="flex items-center justify-center w-full py-0 md:w-6/12 md:py-2">
+        <img src="/Hero.svg" class="mx-auto" style="max-width: 220px; width: 70%;" alt="Website down for maintenance"/>
     </div>
 </div>
 </Container>
