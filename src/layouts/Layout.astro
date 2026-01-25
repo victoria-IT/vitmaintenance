@@ -16,6 +16,17 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      // Set robots meta tag based on domain
+      var meta = document.createElement('meta');
+      meta.name = 'robots';
+      if (window.location.hostname.includes('pages.dev')) {
+        meta.content = 'noindex, nofollow';
+      } else {
+        meta.content = 'index, follow';
+      }
+      document.head.appendChild(meta);
+    </script>
     <script async src="https://cdn.amplitude.com/script/8b7081514100ce1fa1e32e1eba52ce3b.js"></script>
   <body class="bg-white font-SpaceGrotesk min-h-screen flex flex-col">
     <Navbar />
