@@ -2,6 +2,8 @@
 import "../styles/global.css";
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
+
+const { title } = Astro.props;
 ---
 
 <!doctype html>
@@ -9,10 +11,12 @@ import Footer from '../components/Footer.astro';
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Victoria IT is currently down for maintenance to serve you better. Please check back soon for improved services and enhanced features. Thank you for your patience." />
+    <meta name="keywords" content="Victoria IT, maintenance, website down, coming soon" />
+    <meta name="author" content="Victoria IT" />
     <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <!-- Amplitude Analytics Tracking -->
-    <!-- <script src="https://cdn.amplitude.com/script/8b7081514100ce1fa1e32e1eba52ce3b.js"></script> -->
+    <script src="https://cdn.amplitude.com/script/8b7081514100ce1fa1e32e1eba52ce3b.js"></script>
   <body class="bg-white font-SpaceGrotesk min-h-screen flex flex-col">
     <Navbar />
     <div class="flex-1 flex flex-col">
