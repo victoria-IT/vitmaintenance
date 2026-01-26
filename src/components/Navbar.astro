@@ -5,22 +5,57 @@ import Container from "./Container.astro"
 <div class="mt-1">
 <nav class="w-full top-0 left-0 z-50 fixed bg-white">
   <Container>
-  <header class="flex flex-col lg:flex-row justify-between items-center my-1">
+  <header class="flex justify-between items-center my-1">
     <div>
-      <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="/Logo.png" class="h-12" alt="Victoria IT" />
-        </a>
-      </div>
+      <a href="/" class="flex items-center">
+        <img src="/Logo.png" class="h-12" alt="Victoria IT" />
+      </a>
     </div>
-    <div>
-      <div class="hidden lg:flex items-center gap-4">
+    <div class="flex items-center gap-4">
+      <!-- Desktop Call Button -->
+      <div class="hidden lg:flex">
         <a href="tel:1800 687 806" target="_blank" class="px-6 py-3 bg-zinc-900 hover:bg-white rounded-2xl text-center text-white hover:text-black border text-base font-normal leading-6">
           Call 1800 687 806
         </a>
       </div>
+      <!-- Mobile Hamburger Menu -->
+      <div class="lg:hidden">
+        <button id="mobile-menu-button" class="p-2 text-gray-700 hover:text-gray-900 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+    <div class="px-4 py-4">
+      <a href="tel:1800 687 806" class="block px-4 py-3 bg-zinc-900 hover:bg-gray-800 rounded-2xl text-center text-white text-base font-normal">
+        Call 1800 687 806
+      </a>
+    </div>
+  </div>
 </Container>
 </nav>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+      
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+    }
+  });
+</script>
