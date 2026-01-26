@@ -52,7 +52,7 @@ import Container from "./Container.astro"
       
       // Close menu when clicking outside
       document.addEventListener('click', function(event) {
-        if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+        if (event.target instanceof Node && !mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
           mobileMenu.classList.add('hidden');
         }
       });
