@@ -3,16 +3,16 @@ import Container from "./Container.astro"
 ---
 <footer class="bg-lime bg-fixed bg-bottom text-black px-4 py-2 w-full">
     <Container>
-    <div class="py-6 px-2">
+    <div class="py-3 md:py-6 px-2">
         <div class="flex flex-col md:flex-row items-center justify-between w-full gap-2">
             <a href="/" class="flex items-center mb-2 md:mb-0">
-                <img class="w-24 md:w-32" src="/Logo.png" alt="Victoria IT">
+                <img class="w-20 md:w-32" src="/Logo.png" alt="Victoria IT">
             </a>
             <div class="w-full md:w-auto flex justify-center md:justify-end">
-                <div class="text-center md:text-right w-full break-words text-sm md:text-base leading-tight">
-                    @ <span id="currentYear"></span> Site by <a href="https://www.victoriait.com.au" target="_blank" rel="noopener noreferrer" class="underline">Victoria IT</a>
-                    &nbsp;|&nbsp;
-                    <a href="/privacy-policy" class="underline">Privacy Policy</a>
+                <div class="text-center md:text-right w-full text-xs md:text-base leading-tight">
+                    <span>@ <span id="currentYear"></span> Site by <a href="https://www.victoriait.com.au" target="_blank" rel="noopener noreferrer" class="underline">Victoria IT</a></span>
+                    <span class="hidden md:inline mx-1">|</span>
+                    <a href="/privacy-policy" class="underline block md:inline mt-1 md:mt-0">Privacy Policy</a>
                 </div>
             </div>
         </div>

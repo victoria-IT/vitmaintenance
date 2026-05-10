@@ -4,8 +4,6 @@ import tailwind from "@astrojs/tailwind";
 
 import cloudflare from '@astrojs/cloudflare';
 
-import sentry from "@sentry/astro";
-
 
 // Import the Vercel adapter
 // import vercel from '@astrojs/vercel/serverless';
@@ -15,7 +13,7 @@ import sentry from "@sentry/astro";
 export default defineConfig({
   output: 'server',
   // adapter: vercel(),
-  integrations: [tailwind(), sentry()],
+  integrations: [tailwind()],
 
   adapter: cloudflare(),
 });
