@@ -21,7 +21,6 @@
     "@sentry/astro": "^10.36.0",
     "astro": "^5.16.15",
     "astro-navbar": "^2.4.0",
-    "posthog-js": "^1.335.2",
     "swiper": "^12.0.3",
     "tailwindcss": "^3.4.19",
     "typescript": "^5.9.3"
