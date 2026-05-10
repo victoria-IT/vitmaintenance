@@ -13,7 +13,7 @@ import sentry from "@sentry/astro";
 // https://astro.build/config
 
 export default defineConfig({
-  // output: 'server',
+  output: 'server',
   // adapter: vercel(),
   integrations: [tailwind(), sentry()],
 

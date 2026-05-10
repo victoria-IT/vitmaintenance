@@ -1,1 +1,1 @@
-https://vitmaintenance.pages.dev/* https://maintenance.victoriait.com/:splat 301
+# Host-based pages.dev -> production redirect is handled in src/middleware.ts
